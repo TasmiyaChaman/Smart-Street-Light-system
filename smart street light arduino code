@@ -1,0 +1,34 @@
+// Pin definitions
+const int irSensorPin = 2;    // IR sensor input pin
+const int motionSensorPin = 3; // PIR motion sensor input pin
+const int ledPin = 13;         // LED output pin
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(irSensorPin, INPUT);
+  pinMode(motionSensorPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // Read IR sensor
+  int irSensorValue = digitalRead(irSensorPin);
+
+  // Read motion sensor
+  int motionSensorValue = digitalRead(motionSensorPin);
+
+  // Print sensor values to Serial Monitor
+  Serial.print("IR Sensor: ");
+  Serial.print(irSensorValue);
+  Serial.print(" | Motion Sensor: ");
+  Serial.println(motionSensorValue);
+
+  // Turn on LED if either sensor detects something
+  if (irSensorValue == HIGH || motionSensorValue == HIGH) {
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+
+  delay(500); // Adjust delay as needed for your application
+}
