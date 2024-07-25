@@ -26,7 +26,7 @@ This project demonstrates a smart street light system using Arduino, motion sens
    - Ensure all connections are secure and correct to avoid any malfunction.
 
 2. **Upload Code**:
-   - Upload the Arduino sketch (`street_light_control.ino`) provided in the `src` directory to your Arduino board using the Arduino IDE.
+   - Upload the Arduino sketch to your Arduino board using the Arduino IDE.
 
 3. **Hardware Integration**:
    - Connect the relay module to control the street lights. Ensure the connections are made as per the relay module's specifications.
