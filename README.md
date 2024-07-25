@@ -16,7 +16,7 @@ This project demonstrates a smart street light system using Arduino, motion sens
 - LED Lights 
 - Jumper wires
 
-<img src="" alt="Schematics" width="800" height="600">
+<img src="https://github.com/TasmiyaChaman/Smart-Street-Light-system/blob/main/Functioning%20%20of%20Smart%20street%20light.jpeg" alt="Schematics" width="1000" height="600">
 <p>Figure 1: Functioning of Smart street light.</p>
 
 ## Installation
